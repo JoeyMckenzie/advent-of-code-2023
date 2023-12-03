@@ -17,26 +17,10 @@ final readonly class Solution implements SolutionContract
     #[Override]
     public function part1(): int
     {
-        /** @var string[] $lines */
-        $lines = file(self::FILE_PATH, FILE_IGNORE_NEW_LINES);
-
-        /** @var int $totalSum */
-        $totalSum = collect($lines)
-            // Replace anything that isn't a number with an empty string
-            ->map(fn (string $line) => preg_replace('/[^0-9]/', '', $line))
-            ->map(function (mixed $numericString) {
-                $firstDigit = substr($numericString ?? '', 0, 1);
-                $lastDigit = substr($numericString ?? '', -1);
-
-                return intval($firstDigit.$lastDigit);
-            })
-            ->sum();
-
-        return $totalSum;
+        return self::solution('/(?=(\d))/');
     }
 
-    #[Override]
-    public function part2(): int
+    private function solution(string $searchPattern): int
     {
         /** @var string[] $lines */
         $lines = file(self::FILE_PATH, FILE_IGNORE_NEW_LINES);
@@ -46,18 +30,19 @@ final readonly class Solution implements SolutionContract
             /** @var string[][] $matches */
             $matches = [];
 
-            // Holy fuck, don't ask me about overlapping matches ever again
+            // Holy hell, don't ask me about overlapping matches ever again
             // "twone" will forever be my enemy... tl;dr use positive look ahead regexes
-            preg_match_all('/(?=(\d|one|two|three|four|five|six|seven|eight|nine))/', $line, $matches);
+            preg_match_all($searchPattern, $line, $matches);
+
             /** @var string[] $matched */
             $matched = $matches[1];
             $matchesCollection = collect($matched);
 
             /** @var string $firstMatch */
-            $firstMatch = $matchesCollection->first();
+            $firstMatch = $matchesCollection->first() ?? '';
 
             /** @var string $secondMatch */
-            $secondMatch = $matchesCollection->last();
+            $secondMatch = $matchesCollection->last() ?? '';
 
             $firstDigit = $this->matchInput($firstMatch);
             $lastDigit = $this->matchInput($secondMatch);
@@ -81,5 +66,11 @@ final readonly class Solution implements SolutionContract
             'nine' => 9,
             default => intval($input)
         };
+    }
+
+    #[Override]
+    public function part2(): int
+    {
+        return self::solution('/(?=(\d|one|two|three|four|five|six|seven|eight|nine))/');
     }
 }

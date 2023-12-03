@@ -6,13 +6,17 @@ namespace Unit;
 
 use JoeyMcKenzie\AdventOfCode2023\Solutions\Day1\Solution;
 
-test('is a collection', function () {
+test('solutions are correct for day one', function () {
     // Arrange
     $solution = new Solution();
 
     // Act
-    expect($solution->part1())
+    $part1 = $solution->part1();
+    $part2 = $solution->part2();
+
+    // Assert
+    expect($part1)
         ->toBe(55477)
-        ->and($solution->part2())
+        ->and($part2)
         ->toBe(54431);
 });
