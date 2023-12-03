@@ -1,6 +1,6 @@
 <?php
 
-final readonly class Day1Bench implements TestBenchmark
+final readonly class Day1Bench
 {
     public function bench(): void
     {
