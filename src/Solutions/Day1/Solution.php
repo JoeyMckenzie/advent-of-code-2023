@@ -4,10 +4,17 @@ declare(strict_types=1);
 
 namespace JoeyMcKenzie\AdventOfCode2023\Solutions\Day1;
 
-final readonly class Day1
+use JoeyMcKenzie\AdventOfCode2023\Solutions\SolutionContract;
+use Override;
+
+/**
+ * @implements SolutionContract<int, int>
+ */
+final readonly class Solution implements SolutionContract
 {
     private const string FILE_PATH = __DIR__.'/input.txt';
 
+    #[Override]
     public function part1(): int
     {
         /** @var string[] $lines */
@@ -28,6 +35,7 @@ final readonly class Day1
         return $totalSum;
     }
 
+    #[Override]
     public function part2(): int
     {
         /** @var string[] $lines */
@@ -38,8 +46,8 @@ final readonly class Day1
             /** @var string[][] $matches */
             $matches = [];
 
-            // Holy fuck... don't ask me about overlapping matches ever again
-            // "twone" will forever be my enemy...
+            // Holy fuck, don't ask me about overlapping matches ever again
+            // "twone" will forever be my enemy... tl;dr use positive look ahead regexes
             preg_match_all('/(?=(\d|one|two|three|four|five|six|seven|eight|nine))/', $line, $matches);
             /** @var string[] $matched */
             $matched = $matches[1];
