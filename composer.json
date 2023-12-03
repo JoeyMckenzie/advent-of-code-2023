@@ -1,0 +1,41 @@
+{
+  "name": "jmckenzie/advent-of-code-2023",
+  "description": "Advent of Code solutions for 2023.",
+  "type": "library",
+  "require": {
+    "php": "^8.3",
+    "illuminate/collections": "^10.34"
+  },
+  "require-dev": {
+    "pestphp/pest": "2.x-dev",
+    "phpstan/phpstan": "1.11.x-dev",
+    "laravel/pint": "dev-main",
+    "pestphp/pest-plugin-type-coverage": "2.x-dev",
+    "pestphp/pest-plugin-watch": "2.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "JoeyMcKenzie\\AdventOfCode2023\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Joey McKenzie",
+      "email": "joey.mckenzie27@gmail.com"
+    }
+  ],
+  "scripts": {
+    "lint": "vendor/bin/phpstan analyse .",
+    "test": "./vendor/bin/pest",
+    "test:watch": "./vendor/bin/pest --watch",
+    "fmt": "./vendor/bin/pint",
+    "prepare": "git config core.hookspath .githooks",
+    "types": "./vendor/bin/pest --type-coverage --min=100"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
