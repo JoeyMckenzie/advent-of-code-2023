@@ -10,7 +10,7 @@
     "pestphp/pest": "2.x-dev",
     "phpstan/phpstan": "1.11.x-dev",
     "laravel/pint": "dev-main",
-    "pestphp/pest-plugin-type-coverage": "2.x-dev",
+    "pestphp/pest-plugin-type-coverage": "^2.5",
     "pestphp/pest-plugin-watch": "2.x-dev",
     "phpbench/phpbench": "^1.2"
   },
@@ -26,7 +26,7 @@
     }
   ],
   "scripts": {
-    "lint": "vendor/bin/phpstan analyse .",
+    "lint": "vendor/bin/phpstan analyse src",
     "test": "./vendor/bin/pest",
     "test:watch": "./vendor/bin/pest --watch",
     "fmt": "./vendor/bin/pint",
@@ -34,7 +34,7 @@
     "types": "./vendor/bin/pest --type-coverage --min=100",
     "bench": "./vendor/bin/phpbench run tests/Benchmark --report=default"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
   "config": {
     "allow-plugins": {

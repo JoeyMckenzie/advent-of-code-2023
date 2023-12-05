@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b6878a5905d388a88d91c6b0bbeccde",
+    "content-hash": "4ffd1f6175d1ddbf9531a19a285724d5",
     "packages": [
         {
             "name": "illuminate/collections",
@@ -846,12 +846,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "cb4070beacf3a373c76dfed7e67417df64270650"
+                "reference": "a1ec24b6fec27f09e8bbf0ae51f0e717f21b450f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/cb4070beacf3a373c76dfed7e67417df64270650",
-                "reference": "cb4070beacf3a373c76dfed7e67417df64270650",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/a1ec24b6fec27f09e8bbf0ae51f0e717f21b450f",
+                "reference": "a1ec24b6fec27f09e8bbf0ae51f0e717f21b450f",
                 "shasum": ""
             },
             "require": {
@@ -905,7 +905,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-12-02T18:27:04+00:00"
+            "time": "2023-12-04T17:06:22+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1296,12 +1296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "d6db2c13c1f6ae70b274699faa8bf1f0aa900be0"
+                "reference": "809fb855de3ce4fe9487ec5b3ad03c37ce3e7689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/d6db2c13c1f6ae70b274699faa8bf1f0aa900be0",
-                "reference": "d6db2c13c1f6ae70b274699faa8bf1f0aa900be0",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/809fb855de3ce4fe9487ec5b3ad03c37ce3e7689",
+                "reference": "809fb855de3ce4fe9487ec5b3ad03c37ce3e7689",
                 "shasum": ""
             },
             "require": {
@@ -1311,17 +1311,17 @@
                 "pestphp/pest-plugin": "^2.1.1",
                 "pestphp/pest-plugin-arch": "^2.4.1",
                 "php": "^8.1.0",
-                "phpunit/phpunit": "^10.4.2"
+                "phpunit/phpunit": "^10.5.1"
             },
             "conflict": {
-                "phpunit/phpunit": ">10.4.2",
+                "phpunit/phpunit": ">10.5.1",
                 "sebastian/exporter": "<5.1.0",
                 "webmozart/assert": "<1.11.0"
             },
             "require-dev": {
                 "pestphp/pest-dev-tools": "^2.16.0",
                 "pestphp/pest-plugin-type-coverage": "^2.5.0",
-                "symfony/process": "^6.3.4"
+                "symfony/process": "^6.4.0|^7.0.1"
             },
             "default-branch": true,
             "bin": [
@@ -1385,7 +1385,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/2.x"
+                "source": "https://github.com/pestphp/pest/tree/v2.27.0"
             },
             "funding": [
                 {
@@ -1397,7 +1397,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-30T10:47:10+00:00"
+            "time": "2023-12-04T11:11:35+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -1535,7 +1535,7 @@
         },
         {
             "name": "pestphp/pest-plugin-type-coverage",
-            "version": "2.x-dev",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-type-coverage.git",
@@ -1557,7 +1557,6 @@
                 "pestphp/pest": "^2.24.3",
                 "pestphp/pest-dev-tools": "^2.16.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "pest": {
@@ -2221,12 +2220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "94fe5a198cd318e733399ac13ebcf2caeef74477"
+                "reference": "9a036523681a1d48875fdd23b4ad3345f29789ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/94fe5a198cd318e733399ac13ebcf2caeef74477",
-                "reference": "94fe5a198cd318e733399ac13ebcf2caeef74477",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9a036523681a1d48875fdd23b4ad3345f29789ef",
+                "reference": "9a036523681a1d48875fdd23b4ad3345f29789ef",
                 "shasum": ""
             },
             "require": {
@@ -2276,7 +2275,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-02T14:21:53+00:00"
+            "time": "2023-12-04T13:59:55+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2601,16 +2600,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.4.2",
+            "version": "10.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "cacd8b9dd224efa8eb28beb69004126c7ca1a1a1"
+                "reference": "d5d9dca6a902d05b34c4bcbc7c1636ce1dc25408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cacd8b9dd224efa8eb28beb69004126c7ca1a1a1",
-                "reference": "cacd8b9dd224efa8eb28beb69004126c7ca1a1a1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d5d9dca6a902d05b34c4bcbc7c1636ce1dc25408",
+                "reference": "d5d9dca6a902d05b34c4bcbc7c1636ce1dc25408",
                 "shasum": ""
             },
             "require": {
@@ -2650,7 +2649,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.4-dev"
+                    "dev-main": "10.5-dev"
                 }
             },
             "autoload": {
@@ -2682,7 +2681,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.4.2"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.1"
             },
             "funding": [
                 {
@@ -2698,7 +2697,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-26T07:21:45+00:00"
+            "time": "2023-12-01T16:57:05+00:00"
         },
         {
             "name": "psr/cache",
@@ -5196,12 +5195,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "pestphp/pest": 20,
         "phpstan/phpstan": 20,
         "laravel/pint": 20,
-        "pestphp/pest-plugin-type-coverage": 20,
         "pestphp/pest-plugin-watch": 20
     },
     "prefer-stable": true,

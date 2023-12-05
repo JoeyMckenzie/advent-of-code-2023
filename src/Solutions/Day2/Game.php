@@ -8,6 +8,9 @@ use Illuminate\Support\Collection;
 
 final readonly class Game
 {
+    /**
+     * @var array<string, int>
+     */
     private const array GAME_POSSIBILITIES = ['red' => 12, 'green' => 13, 'blue' => 14];
 
     public int $gameId;
@@ -52,8 +55,6 @@ final readonly class Game
     public function inputIsPossible(string $input): bool
     {
         [$count, $color] = explode(' ', $input);
-
-        /** @var int $countLimit */
         $countLimit = self::GAME_POSSIBILITIES[$color];
 
         return intval($count) <= $countLimit;
@@ -78,7 +79,7 @@ final readonly class Game
 
         /** @var int $power */
         $power = collect($minimums)
-            ->reduce(fn ($carry, $value) => $carry * $value, 1);
+            ->reduce(fn (int $carry, int $value): int => $carry * $value, 1);
 
         return $power;
     }
