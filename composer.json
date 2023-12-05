@@ -1,6 +1,6 @@
 {
-  "name": "jmckenzie/advent-of-code-2023",
-  "description": "Advent of Code solutions for 2023.",
+  "name": "jmckenzie/advent-of-code",
+  "description": "Advent of Code solutions in PHP.",
   "type": "library",
   "require": {
     "php": "^8.3",
@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "JoeyMcKenzie\\AdventOfCode2023\\": "src/"
+      "JoeyMcKenzie\\AdventOfCode\\": "src/"
     }
   },
   "authors": [

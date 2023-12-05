@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace JoeyMcKenzie\AdventOfCode2023\Solutions;
+namespace JoeyMcKenzie\AdventOfCode\Solutions;
 
 /**
  * @template TPart1

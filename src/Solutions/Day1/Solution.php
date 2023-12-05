@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace JoeyMcKenzie\AdventOfCode2023\Solutions\Day1;
+namespace JoeyMcKenzie\AdventOfCode\Solutions\Day1;
 
-use JoeyMcKenzie\AdventOfCode2023\Solutions\SolutionContract;
+use JoeyMcKenzie\AdventOfCode\Solutions\SolutionContract;
 use Override;
 
 /**
@@ -25,6 +25,9 @@ final readonly class Solution implements SolutionContract
         /** @var string[] $lines */
         $lines = file(self::FILE_PATH, FILE_IGNORE_NEW_LINES);
         $totalSum = 0;
+
+        /** @var string[][] $collectionMatches */
+        $collectionMatches = [];
 
         foreach ($lines as $line) {
             /** @var string[][] $matches */

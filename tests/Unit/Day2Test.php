@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Unit;
 
-use JoeyMcKenzie\AdventOfCode2023\Solutions\Day2\Solution;
+use JoeyMcKenzie\AdventOfCode\Solutions\Day2\Solution;
 
 test('solutions are correct for day two', function () {
     // Arrange
@@ -16,4 +16,4 @@ test('solutions are correct for day two', function () {
     // Assert
     expect($part1)
         ->toBe(55477);
-})->skip();
+});

@@ -1,9 +1,9 @@
 <?php
 
 test('all files should be strictly typed')
-    ->expect('JoeyMcKenzie\AdventOfCode2023')
+    ->expect('JoeyMcKenzie\AdventOfCode')
     ->toUseStrictTypes()
-    ->and('JoeyMcKenzie\AdventOfCode2023\Solutions\**')
+    ->and('JoeyMcKenzie\AdventOfCode\Solutions\**')
     ->toBeReadonly()
-    ->and('JoeyMcKenzie\AdventOfCode2023\Solutions\**')
+    ->and('JoeyMcKenzie\AdventOfCode\Solutions\**')
     ->toBeFinal();

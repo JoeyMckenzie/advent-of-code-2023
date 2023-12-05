@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Unit;
 
-use JoeyMcKenzie\AdventOfCode2023\Solutions\Day1\Solution;
+use JoeyMcKenzie\AdventOfCode\Solutions\Day1\Solution;
 
-test('solutions are correct for day one', function () {
+test('Assert solutions are correct for day one', function () {
     // Arrange
     $solution = new Solution();
 
