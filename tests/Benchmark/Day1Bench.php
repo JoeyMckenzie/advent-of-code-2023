@@ -1,6 +1,6 @@
 <?php
 
-use Day1\Solution;
+use JoeyMcKenzie\AdventOfCode\Solutions\Day1\Solution;
 
 final readonly class Day1Bench
 {
